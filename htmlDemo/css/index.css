@@ -1,0 +1,25 @@
+.out_button{
+    width: 100%;
+}
+.linkButton {
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    background: #69bdfb;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+}
+.top_btn{
+    position: fixed;
+    top:200px;
+    left: 0;
+}
+.bottom_btn{
+    position: fixed;
+    bottom:200px;
+    left: 0;
+}
