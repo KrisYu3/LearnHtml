@@ -23,3 +23,20 @@
     bottom:200px;
     left: 0;
 }
+
+/*list*/
+.financeList li{
+    padding: 5px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.financeList li .leftInfo {
+    flex: 1;
+
+}
+.financeList li .rightInfo{
+    flex: 1;
+    text-align: right;
+}
