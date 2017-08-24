@@ -5,14 +5,65 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/finance.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
     <title>报销申请</title>
 </head>
 <body>
-    <form action="#">
-        <div class="date_label">发生日期:</div>
+    <form action="#" class="fiance_info">
+        <ul class="fiance_apply">
+            <li class="apply_date">
+                <div class="date_leftInfo">
+                    发生日期:
+                </div>
+                <div class="date_rightInfo">
+                    <input class="time_info" type="date">
+                </div>
+            </li>
+            <li class="apply_price">
+                <div class="price_leftInfo">
+                    报销金额(单位元):
+                </div>
+                <div class="price_rightInfo">
+                    <!--<input class="price_info" type="number" step="0.01">-->
+                    <input class="price_info" type="text" onkeyup="this.value=/^\d+\.?\d{0,2}$/.test(this.value) ?
+                     this.value : ''" placeholder="0.00">
+                </div>
+            </li>
+            <li class="apply_type">
+                <div class="type_leftInfo">
+                    报销类型:
+                </div>
+                <div class="type_rightInfo">
+                    <select name="type" class="type_info">
+                        <option value="10" selected="selected">长途车费</option>
+                        <option value="20">短途车费</option>
+                        <option value="30">餐费</option>
+                        <option value="40">住宿费</option>
+                        <option value="50">雇工费</option>
+                        <option value="99">杂费</option>
+                    </select>
+                </div>
+            </li>
+            <li class="apply_detail">
+                <div class="detail_leftInfo">
+                    描述:
+                </div>
+                <div class="detail_rightInfo">
+                    <textarea class="detail_info"></textarea>
+                </div>
+            </li>
+            <li class="apply_addPhoto">
+                <div class="addPhoto_button">
+                    <a class="linkButton " href="#">添加照片凭证</a>
+                </div>
+            </li>
+            <li class="apply_addFinance">
+                <div class="addFinance">
+                    <a class="linkButton" href="#">添加发票产生</a>
+                </div>
+            </li>
+        </ul>
     </form>
-
 </body>
 </html>
